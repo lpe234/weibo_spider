@@ -84,6 +84,7 @@ while True:
         next_page.click()
         count += 1
         time.sleep(2)
-    except NoSuchElementException:
+    except NoSuchElementException, e:
+        logging.error(e)
         break
 
